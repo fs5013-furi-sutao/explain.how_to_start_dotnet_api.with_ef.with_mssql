@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+    db:
+        build: ./docker/db
+        environment:
+            SA_PASSWORD: msSqlserver123
+            ACCEPT_EULA: "Y"
+            MSSQL_AGENT_ENABLED: "true"
+        ports:
+            - published: 1433
+              target: 1433
+        volumes:
+            - ms-sqlserver-linux-data:/var/opt/mssql:rw
+            - ./docker/db/backup:/backup:rw
+volumes:
+    ms-sqlserver-linux-data:
+        driver: local
