@@ -34,8 +34,6 @@ https://localhost:5001/api/student
 explain.how_to_start_dotnet_api.with_ef.with_mssql
 このページでは、.NET CLI を使用して .NET WebAPI プロジェクトを作成し、SQL Server に接続する方法を説明する。
 
-https://itnext.io/asp-net-core-3-1-entity-framework-core-with-postgresql-with-code-first-approach-33b102e1734f
-
 モデルやその他の EntityFramework の詳細について、ここでは詳しく説明しない。
 
 このページの主な目的は、Entity Framework Core を .NET Core 3.1 で使用して SQL Server に接続する方法を理解すること。
