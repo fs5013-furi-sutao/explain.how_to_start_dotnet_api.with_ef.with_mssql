@@ -1,4 +1,36 @@
 # ASP.NET Core 3.1 と Entity Framework Core で WebAPI の作成を始める（with SQL Server）
+
+## Getting started: サンプルコードの実行方法
+SQL Server の起動
+```console
+dockre-compose up -d
+```
+プロジェクトフォルダに移動
+```console
+cd ./api.netcore.mssql/studentapi
+```
+
+Migrations を実行
+```console
+dotnet ef migrations add InitialCreate
+```
+
+Students テーブルの作成
+```console
+dotnet ef migrations add InitialCreate
+```
+
+アプリケーションの実行
+```console
+dotnet ef database update
+```
+
+WebAPI にアクセス
+```
+https://localhost:5001/api/student
+```
+
+## 概要
 explain.how_to_start_dotnet_api.with_ef.with_mssql
 このページでは、.NET CLI を使用して .NET WebAPI プロジェクトを作成し、SQL Server に接続する方法を説明する。
 
